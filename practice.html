@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 5;
+      let b = 3;
+      let sonuc = (a + b) / 2;
+      console.log(sonuc);
+
+      function ortalama(a, b) {
+        return (a + b) / 2;
+      }
+      console.log(ortalama(9, 7));
+
+      let toplam = 0;
+      for (let sayac = 1; sayac <= 10; sayac += 1) {
+        toplam += sayac;
+      }
+      console.log("toplam:", toplam);
+
+      console.log(Math.random());
+
+      function countTo(n) {
+        for (let i = 2; i <= n; i += 2) {
+          console.log(i);
+        }
+      }
+      countTo(100);
+
+      for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10; j++) {
+          console.log(j + "x" + i + "=" + j * i);
+        }
+      }
+
+      function converToKm(lenght) {
+        return lenght * 0.621371192;
+      }
+      console.log(converToKm(10));
+
+      // let dizi = [1, 3, 5, 7];
+      // function sum(arr) {
+      //   let topla = 0;
+      //   for (let i = 0; i < arr.length; i++) {
+      //     topla += arr[i];
+      //   }
+      //   return topla;
+      // }
+      // console.log("toplam", sum(dizi));
+
+      let dizi = [1, 3, 5, 7];
+      function tersCevir(arr) {
+        let tersDizi = [];
+        for (let i = arr.length - 1; i >= 0; i--) {
+          tersDizi.push(arr[i]);
+        }
+        return tersDizi;
+      }
+      console.log(tersCevir(dizi));
+    </script>
+  </body>
+</html>
